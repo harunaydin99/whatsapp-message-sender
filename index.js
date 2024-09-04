@@ -18,7 +18,7 @@ client.on('ready', () => {
     console.log('WhatsApp Web bağlantısı kuruldu.');
 
     // Mesaj göndermek istediğiniz numarayı buraya girin
-    const number = '905076356771'; // Numara formatı: +90 123 456 7890 -> 901234567890
+    const number = '905512582698'; // Numara formatı: +90 123 456 7890 -> 901234567890
 	const chatId = number + "@c.us";
 
 
@@ -53,7 +53,7 @@ client.on('message', async (msg) => {
 
 // İstemciyi başlat
 client.initialize();*/
-
+///////////////////////////
 
 const { Client, LocalAuth, MessageMedia } = require('whatsapp-web.js');
 const qrcode = require('qrcode-terminal');
@@ -98,7 +98,7 @@ app.post('/send-message', (req, res) => {
 // Sunucuyu başlat
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {
-    console.log(`Sunucu çalışıyor, port: ${PORT}`);
+    console.log(`Sunucu çalışıyor; port: ${PORT}`);
 });
 
 // WhatsApp istemcisini başlat.
