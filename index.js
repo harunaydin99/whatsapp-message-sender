@@ -2,6 +2,8 @@
 const { MessageMedia } = require('whatsapp-web.js');
 const qrcode = require('qrcode-terminal');
 
+
+
 // WhatsApp istemcisini başlat
 const client = new Client({
     authStrategy: new LocalAuth()
@@ -60,8 +62,16 @@ const qrcode = require('qrcode-terminal');
 const express = require('express');
 const bodyParser = require('body-parser');
 
+
+
 const app = express();
 app.use(bodyParser.json()); // JSON gövdesi kullanmak için body-parser'ı ekliyoruz
+
+app.use((req, res, next) => {
+    res.header("Access-Control-Allow-Origin", "*"); // Tüm domainlere izin vermek için
+    res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
+    next();
+});
 
 // WhatsApp istemcisini başlat
 const client = new Client({
@@ -96,7 +106,7 @@ app.post('/send-message', (req, res) => {
 });
 
 // Sunucuyu başlat
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 3001;
 app.listen(PORT, () => {
     console.log(`Sunucu çalışıyor; port: ${PORT}`);
 });
