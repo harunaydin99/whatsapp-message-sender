@@ -111,5 +111,5 @@ app.listen(PORT, () => {
     console.log(`Sunucu çalışıyor; port: ${PORT}`);
 });
 
-// WhatsApp istemcisini başlat.
+// WhatsApp istemcisini başlat
 client.initialize();
