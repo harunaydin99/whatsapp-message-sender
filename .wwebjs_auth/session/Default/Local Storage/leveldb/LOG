@@ -1,3 +1,2 @@
-2024/09/05-17:39:06.302 a203 Reusing MANIFEST /Users/harunaydin/Desktop/vscode-html/whatsapp-message-send/.wwebjs_auth/session/Default/Local Storage/leveldb/MANIFEST-000001
-2024/09/05-17:39:06.305 a203 Recovering log #3
-2024/09/05-17:39:06.306 a203 Reusing old log /Users/harunaydin/Desktop/vscode-html/whatsapp-message-send/.wwebjs_auth/session/Default/Local Storage/leveldb/000003.log 
+2024/09/10-20:06:41.398 8b03 Creating DB /Users/harunaydin/Desktop/vscode-html/whatsapp-message-send/.wwebjs_auth/session/Default/Local Storage/leveldb since it was missing.
+2024/09/10-20:06:41.412 8b03 Reusing MANIFEST /Users/harunaydin/Desktop/vscode-html/whatsapp-message-send/.wwebjs_auth/session/Default/Local Storage/leveldb/MANIFEST-000001
