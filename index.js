@@ -91,7 +91,7 @@ client.on('ready', () => {
 
 // POST isteği ile mesaj gönderme
 app.post('/send-message', (req, res) => {
-    const number = req.body.number; // İstek gövdesinden telefon numarasını alıyoruz
+    const number = req.body.number; // İstek gövdesinden telefon numarasını alıyoruzz
     const message = req.body.message; // İstek gövdesinden mesajı alıyoruz
 
     const chatId = number + '@c.us'; // Chat ID'yi oluşturuyoruz
