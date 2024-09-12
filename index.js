@@ -98,7 +98,7 @@ app.post('/send-message', (req, res) => {
 
     client.sendMessage(chatId, message).then(response => {
         console.log(`Mesaj başarıyla gönderildi: ${response.id.id}`);
-        res.status(200).send('Mesaj başarıyla gönderildi');
+        res.status(200).send('Mesaj başarıyla gönderildi.>');
     }).catch(err => {
         console.error('Mesaj gönderilemedi:', err);
         res.status(500).send('Mesaj gönderilemedi');
