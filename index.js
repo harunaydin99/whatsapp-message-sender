@@ -97,7 +97,7 @@ app.post('/send-message', (req, res) => {
     const chatId = number + '@c.us'; // Chat ID'yi oluşturuyoruz
 
     client.sendMessage(chatId, message).then(response => {
-        console.log(`Mesaj başarıyla gönderildi: ${response.id.id}`);
+        console.log(`Mesaj başarıyla gönderildi:: ${response.id.id}`);
         res.status(200).send('Mesaj başarıyla gönderildi.>');
     }).catch(err => {
         console.error('Mesaj gönderilemedi:', err);
