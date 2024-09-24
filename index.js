@@ -4,6 +4,8 @@ const express = require('express');
 const bodyParser = require('body-parser');
 const axios = require('axios');
 const fs = require('fs');
+require('dotenv').config();
+const API_KEY = process.env.API_KEY; // Güvenli bir şekilde sakla!
 
 const app = express();
 app.use(bodyParser.json()); // JSON gövdesi kullanmak için body-parser'ı ekliyoruz
@@ -11,6 +13,13 @@ app.use(bodyParser.json()); // JSON gövdesi kullanmak için body-parser'ı ekli
 app.use((req, res, next) => {
     res.header("Access-Control-Allow-Origin", "*"); // Tüm domainlere izin vermek için
     res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
+
+    const apiKey = req.headers['x-api-key']; // İstek başlığından API key'i al
+
+    if (!apiKey || apiKey !== API_KEY) {
+        return res.status(401).json({ error: "Unauthorized: Invalid API Key" });
+    }
+
     next();
 });
 
@@ -139,7 +148,7 @@ app.post('/send-video', async (req, res) => {
   });
 
 // Sunucuyu başlat
-const PORT = process.env.PORT || 3002;
+const PORT = process.env.PORT || 3003;
 app.listen(PORT, () => {
     console.log(`Sunucu çalışıyor; port: ${PORT}`);
 });

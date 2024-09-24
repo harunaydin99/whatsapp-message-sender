@@ -1,3 +1,2 @@
-2024/09/13-16:02:24.417 f203 Reusing MANIFEST /Users/harunaydin/Desktop/vscode-html/whatsapp-message-send/.wwebjs_auth/session/Default/Service Worker/Database/MANIFEST-000001
-2024/09/13-16:02:24.418 f203 Recovering log #3
-2024/09/13-16:02:24.418 f203 Reusing old log /Users/harunaydin/Desktop/vscode-html/whatsapp-message-send/.wwebjs_auth/session/Default/Service Worker/Database/000003.log 
+2024/09/24-15:19:25.728 b403 Creating DB /Users/harunaydin/Desktop/vscode-html/whatsapp-message-send/.wwebjs_auth/session/Default/Service Worker/Database since it was missing.
+2024/09/24-15:19:25.741 b403 Reusing MANIFEST /Users/harunaydin/Desktop/vscode-html/whatsapp-message-send/.wwebjs_auth/session/Default/Service Worker/Database/MANIFEST-000001
