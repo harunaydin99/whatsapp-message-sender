@@ -148,7 +148,7 @@ app.post('/send-video', async (req, res) => {
   });
 
 // Sunucuyu başlat
-const PORT = process.env.PORT || 3003;
+const PORT = process.env.PORT || 3002;
 app.listen(PORT, () => {
     console.log(`Sunucu çalışıyor; port: ${PORT}`);
 });
