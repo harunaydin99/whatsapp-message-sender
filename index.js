@@ -35,7 +35,7 @@ function logToFile(data) {
     fs.appendFileSync(logPath, `[${timestamp}] ${data}\n`);
 }
 
-// WhatsApp istemcisi
+// WhatsApp istemcisi 
 //const puppeteerPath = process.env.CHROME_PATH || '/Applications/Google Chrome.app/Contents/MacOS/Google Chrome';
 const puppeteerPath = process.env.CHROME_PATH || '/usr/bin/chromium';
 
