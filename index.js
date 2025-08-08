@@ -36,7 +36,8 @@ function logToFile(data) {
 }
 
 // WhatsApp istemcisi
-const puppeteerPath = process.env.CHROME_PATH || '/Applications/Google Chrome.app/Contents/MacOS/Google Chrome';
+//const puppeteerPath = process.env.CHROME_PATH || '/Applications/Google Chrome.app/Contents/MacOS/Google Chrome';
+const puppeteerPath = process.env.CHROME_PATH || '/usr/bin/chromium';
 
 const client = new Client({
     authStrategy: new LocalAuth(),
@@ -114,7 +115,7 @@ app.post('/send-video', async (req, res) => {
 });
 
 // Sunucuyu başlat
-const PORT = process.env.PORT || 3002;
+const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {
     console.log(`Sunucu çalışıyor; port: ${PORT}`);
 });
